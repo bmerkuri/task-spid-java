@@ -27,38 +27,22 @@ public class Spid extends Base {
                 '}';
     }
 
-    /**
-     * get field
-     *
-     * @return user
-     */
+
     public User getUser() {
         return this.user;
     }
 
-    /**
-     * set field
-     *
-     * @param user
-     */
+
     public void setUser(User user) {
         this.user = user;
     }
 
-    /**
-     * get field
-     *
-     * @return status
-     */
+
     public Status getStatus() {
         return this.status;
     }
 
-    /**
-     * set field
-     *
-     * @param status
-     */
+
     public void setStatus(Status status) throws Exception {
         this.status = status;
     }

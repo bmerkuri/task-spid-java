@@ -25,11 +25,11 @@ public class spidMain {
             spidManager.showList();
 
             // Showing SPID of a user
-            System.out.println(userManager.showSpidOf("meghan"));
+            System.out.println(userManager.showSpidOf("bmerkuri"));
 
-            System.out.println("Modifying user with the user of 'meghan'");
+            System.out.println("Modifying user with the user of 'bmerkuri'");
             // Modify user (Only the surname)
-            userManager.modifyUser("meghan", null, "Garrett");
+            userManager.modifyUser("bmerkuri", null, "Merkuri");
 
             // Modify spid
             System.out.println("Modify the SPID with the id of 1 to be ready for review");
