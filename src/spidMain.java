@@ -29,7 +29,7 @@ public class spidMain {
 
             System.out.println("Modifying user with the user of 'bmerkuri'");
             // Modify user (Only the surname)
-            userManager.modifyUser("bmerkuri", null, "Merkuri");
+            userManager.modifyUser("bmerkuri", "bjoni", "Merkuri");
 
             // Modify spid
             System.out.println("Modify the SPID with the id of 1 ");
