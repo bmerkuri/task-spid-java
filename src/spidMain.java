@@ -32,7 +32,7 @@ public class spidMain {
             userManager.modifyUser("bmerkuri", null, "Merkuri");
 
             // Modify spid
-            System.out.println("Modify the SPID with the id of 1 to be ready for review");
+            System.out.println("Modify the SPID with the id of 1 ");
             spidManager.modifySpid(1, Status.READY_FOR_REVIEW);
             System.out.println(newSpid);
         } catch (Exception err) {
