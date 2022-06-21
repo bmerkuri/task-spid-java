@@ -11,15 +11,17 @@ import java.util.*;
 @Service
 public class SpidService {
     private List<Spid> data = new ArrayList<Spid>();
-    private com.example.demo.utils.arr arr = new arr();
+    private arr arr = new arr();
 
+
+    //spid section
     public Spid getSpid(long id) throws Exception {
         for (int i = 0; i < data.size(); ++i) {
             if (data.get(i).getId() == id) {
                 return data.get(i);
             }
         }
-        throw new Exception(String.format("Spid of id:'%d' does not exists!", id));
+        throw new Exception(String.format("Spid with an id:'%d' does not exists!", id));
     }
 
     public Spid createSpid(User user) {
@@ -43,7 +45,7 @@ public class SpidService {
 
 
     public void showList() {
-        System.out.println("\nList of SPIDS: ");
+        System.out.println("\nList of SPIDs: ");
         data.forEach(el -> System.out.println("\t" + el));
     }
 }

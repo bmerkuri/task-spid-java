@@ -36,7 +36,7 @@ public class UserService {
         User user = new User(id, new Date(), name, surname, username);
         data.add(user);
         usernames.add(username);
-        System.out.println(String.format("User %d created successfully!", id));
+        System.out.println(String.format("User %d was created successfully!", id));
         return user;
     }
 
@@ -53,7 +53,7 @@ public class UserService {
 
 
     public Spid showSpidOf(String username) throws Exception {
-        if (!doesUsernameExists(username)) throw new Exception("This user does not exists!");
+        if (!doesUsernameExists(username)) throw new Exception("The user your are searching for does not exists!");
 
         for (int i = 0; i < data.size(); ++i) {
             if (data.get(i).getUsername() == username) {
